@@ -1,23 +1,26 @@
-# Ruby
+# Ruby Cheatsheet
 
 - Ruby was created by Maximoto. He wanted to focus on programmer productivity.
-- Utilies garbage collector.
+- Utilizes garbage collector.
 - Uses `.rb` extention.
 
 ## Resourses
 
 - [Ruby in One Video](https://youtu.be/8wZ2ZD--VTk)
+- [code](./main.rb)
 
-![ruby logo](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/1024px-Ruby_logo.svg.png)
+<figure align="center">
+<img width="300" src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/1024px-Ruby_logo.svg.png" alt="ruby logo"/>
+</figure>
 
 ## Hello World
 
 - Printing
   `print "Hello "`
 
-## Prints with new line
+- Print with new line
 
-`puts "World"`
+  `puts "World"`
 
 ## Comments
 
@@ -45,15 +48,16 @@ puts "Yor name is #{name}"
 
 ## Concatenation
 
-`puts "Yor name is " + name `
+`puts "Your name is " + name `
 
 ## Type Casting
 
 ```rb
-puts 3.14.to_i
-puts 3.to_f
-puts "3.14".to_f
-puts 100 + "3.14".to_f
+puts 3.14.to_i # to integer
+puts 3.to_f # to float
+puts "3.14".to_f  # to float
+puts 3.to_s # to string
+puts 100 + "3.14".to_f # to float
 ```
 
 ## Strings
@@ -76,15 +80,18 @@ puts greeting.include? "jou"
 ## Numbers
 
 ```rb
-puts 2 * 3 # Basic Arithmetic
+ # Basic Arithmetic
+puts 2 * 3 # Multiplication
 puts 2 ** 3  # Exponent
 puts 10 % 3  # Modulus
 puts 10 / 3.0  # int's and doubles
-# operations on two integers return an integer whereas operations containing a float return a float.
-puts 10 + 8 * 3  # order of operations
+# Operations on two integers return an integer whereas operations containing a float return a float.
+
+puts 10 + 8 * 3  # order of operations -> BODMAS
 
 num = 10
-num += 100 # += , -= , /= , *=
+num += 100 # increment
+# += , -= , /= , *=
 puts num
 
 num = -36.8
@@ -120,6 +127,7 @@ puts lucky_nums.length # array length
 ## N Dimensional Array
 
 ```rb
+# 2D Array
 num_grid = [ [3,5],[4,5]]
 num_grid[0][0] = 99
 ```
@@ -138,23 +146,28 @@ puts friends.include? "collo" # Check if included
 ## Methods Or Functions
 
 ```rb
+# Function declaration
 def add_nums (num1 , num2=99)
     return num1 + num2
 end
 
+# Function call
 puts add_nums(4,4)
 ```
 
 ## Conditionals
 
 ```rb
-is_smart = true and false
-is_smart = true or false
+
+is_smart = true and false # and
+is_smart = true or false # or
+is_smart = !true # not
 ```
 
-# Control Statements
+# Control Structures
 
 ```rb
+# If statement
 if is_smart
     puts "Noble Prize"
 elsif !is_smart
@@ -162,7 +175,7 @@ elsif !is_smart
 else
     puts "right dee"
 end
-
+# Conditional operators
 # > ,< ,>= ,<= ,!= ,== , String.equals
 
 ```
@@ -175,7 +188,7 @@ case mark
     when  "A"
         puts "hard"
     when  "F"
-        puts "nigga"
+        puts "💀"
     else
         puts "right dee"
 end
@@ -198,7 +211,7 @@ puts test_grades[3]
 
 ## Loops
 
-### While loops
+### While loop
 
 ```rb
 index =1
@@ -216,23 +229,25 @@ for index in 0..5
     puts index
 end
 
-
+#
 5.times do |i|
     puts i
 end
 
+#
 lucky_nums = [1, 2, 3, 4, 5]
 
 for lucky_num in lucky_nums
     puts lucky_num
 end
 
+#
 lucky_nums.each do |lucky_num|
     puts lucky_num
 end
 ```
 
-# Exception Catching / Erro Handling
+# Exception Catching / Error Handling
 
 ```rb
 # division by zero error
@@ -370,5 +385,3 @@ class Lecturer < Teacher
     end
 end
 ```
-
-# Ruby_tutor
