@@ -8,6 +8,8 @@
 
 - [Ruby in One Video](https://youtu.be/8wZ2ZD--VTk)
 
+![ruby logo](https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Ruby_logo.svg/1024px-Ruby_logo.svg.png)
+
 ## Hello World
 
 - Printing
@@ -368,4 +370,5 @@ class Lecturer < Teacher
     end
 end
 ```
+
 # Ruby_tutor
