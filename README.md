@@ -4,6 +4,11 @@
 - Utilizes garbage collector.
 - Uses `.rb` extention.
 
+## Contents
+
+- [Basics](#hello-world)
+- [Ruby on Rails]()
+
 ## Resourses
 
 - [Ruby in One Video](https://youtu.be/8wZ2ZD--VTk)
